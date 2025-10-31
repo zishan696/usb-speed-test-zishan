@@ -1,4 +1,4 @@
-# ⚡ USB 3.0 Speed Test
+# ⚡ USB 3.0 Speed Test Documentation
 
 **Professional cross-platform USB 3.0 speed testing framework with intelligent fail-fast behavior and automatic drive detection.**
 
@@ -64,7 +64,7 @@ pip install pytest
 
 **1. Interactive Demo (Recommended for First-Time Users)**
 ```bash
-python demo_auto_detection.py
+python usb_speed_test_launcher.py
 ```
 This will:
 - Detect your operating system
@@ -94,10 +94,10 @@ python -m pytest test_usb_improved.py -v -s
 
 ```
 usb-speed-test-zishan/
-├── test_usb_improved.py      # Main test suite with fixtures & parametrization
+├── test_usb_improved.py       # Main test suite with fixtures & parametrization
 ├── conftest.py                # pytest hooks for intelligent test orchestration
 ├── usb_detector.py            # Cross-platform USB auto-detection module
-├── demo_auto_detection.py     # Interactive demo with drive selection and run USB speed test in a complete package
+├── usb_speed_test_launcher.py # Interactive demo with drive selection and run USB speed test in a complete package
 ├── pytest.ini                 # pytest configuration & custom markers
 ├── .gitignore                 # Git ignore patterns
 └── README.md                  # This file
@@ -110,7 +110,7 @@ usb-speed-test-zishan/
 | `test_usb_improved.py` | Core test suite | pytest fixtures, parametrization, logging |
 | `conftest.py` | Test orchestration | pytest hooks, custom markers, conditional fail-fast |
 | `usb_detector.py` | Platform detection | subprocess, platform-specific commands |
-| `demo_auto_detection.py` | User interface | Interactive selection, subprocess management |
+| `usb_speed_test_launcher.py` | User interface | Interactive selection, subprocess management |
 | `pytest.ini` | Test configuration | Markers, verbosity, traceback settings |
 
 ---
@@ -224,7 +224,7 @@ Fix the pre-condition issue and re-run tests.
 
 ### Example 1: Interactive Demo (Best for Beginners)
 ```bash
-python demo_auto_detection.py
+python usb_speed_test_launcher.py
 ```
 **What it does:**
 1. Scans for USB drives
@@ -532,7 +532,7 @@ If you're reviewing this code for learning, focus on:
 1. **`conftest.py`**: Advanced pytest hooks and markers
 2. **`usb_detector.py`**: Cross-platform subprocess handling
 3. **`test_usb_improved.py`**: Fixtures, parametrization, and production practices
-4. **`demo_auto_detection.py`**: User interaction and subprocess integration
+4. **`usb_speed_test_launcher.py`**: User interaction and subprocess integration
 
 ---
 
@@ -569,7 +569,7 @@ This project showcases:
 
 ```bash
 # Interactive demo (easiest)
-python demo_auto_detection.py
+python usb_speed_test_launcher.py
 
 # Run all tests (USB Path required)
 python -m pytest test_usb_improved.py -v -s
