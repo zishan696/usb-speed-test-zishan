@@ -1,4 +1,4 @@
-# ⚡ USB Speed Test Suite - Production-Ready Edition
+# ⚡ USB 3.0 Speed Test
 
 **Professional cross-platform USB 3.0 speed testing framework with intelligent fail-fast behavior and automatic drive detection.**
 
