@@ -1,6 +1,6 @@
 # ⚡ USB 3.0 Speed Test Documentation
 
-**Professional cross-platform USB 3.0 speed testing framework with intelligent fail-fast behavior and automatic drive detection.**
+**Cross-platform USB 3.0 speed testing framework with intelligent fail-fast behavior and automatic drive detection feature.**
 
 [![Python](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
 [![pytest](https://img.shields.io/badge/pytest-8.0+-green.svg)](https://docs.pytest.org/)
@@ -349,41 +349,6 @@ markers =
 
 ---
 
-## 🎓 Technical Highlights (For Interviews)
-
-### 1. Advanced pytest Usage
-- **Custom Hooks**: Implemented 4 pytest hooks for intelligent test orchestration
-- **Fixtures**: `usb_path` and `writable_usb_path` for clean setup/teardown
-- **Parametrization**: Data-driven testing with multiple file sizes
-- **Markers**: Custom test categorization for selective execution
-
-### 2. Cross-Platform Engineering
-- **Abstraction**: Platform-specific logic isolated in `usb_detector.py`
-- **Subprocess Management**: Safe execution of OS commands with timeouts
-- **Path Handling**: Proper use of `os.path.join()` and `Path` objects
-- **Error Handling**: Graceful fallbacks when OS commands fail
-
-### 3. Production-Ready Practices
-- **Logging**: Structured logging with levels (INFO, DEBUG, ERROR, WARNING)
-- **Error Messages**: Actionable error messages for debugging
-- **Resource Cleanup**: Guaranteed file deletion with `try-finally`
-- **Constants**: No magic numbers, all values named and documented
-- **Validation**: Input validation, file size verification, space checks
-
-### 4. Code Organization
-- **Separation of Concerns**: Detection, testing, and UI in separate modules
-- **DRY Principle**: Helper functions eliminate code duplication
-- **Single Responsibility**: Each function has one clear purpose
-- **Documentation**: Comprehensive docstrings and inline comments
-
-### 5. Testing Best Practices
-- **Edge Cases**: Tests for invalid inputs, boundary conditions
-- **Fast Feedback**: Fail-fast for setup issues, complete data for performance
-- **Clear Output**: Color-coded summaries, progress indicators, visual separators
-- **Reproducibility**: Consistent test conditions, no random data issues
-
----
-
 ## 🔍 Code Quality Metrics
 
 - **Test Coverage**: 6 comprehensive tests (3 pre-conditions + 3 performance)
@@ -520,7 +485,7 @@ Files smaller than 1MB can be entirely cached in RAM, giving misleading "infinit
 - [ ] HTML report generation
 - [ ] CI/CD integration examples
 - [ ] Docker containerization
-- [ ] GUI version (tkinter/PyQt)
+- [ ] GUI version (tkinter/PyQt/Electron)
 - [ ] Multiple simultaneous USB tests
 
 ---
@@ -538,7 +503,7 @@ If you're reviewing this code for learning, focus on:
 
 ## 🤝 Contributing
 
-This project demonstrates production-level Python development for portfolio/interview purposes. Feel free to:
+This project demonstrates production-level Python development. Feel free to:
 - Fork and adapt for your own use cases
 - Study the code structure and patterns
 - Use as a reference for pytest best practices
