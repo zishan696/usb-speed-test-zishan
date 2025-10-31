@@ -218,7 +218,7 @@ def main():
     print("\nTo run the full test suite:")
     print("  python -m pytest test_usb_auto.py -v -s")
     print("\nTo see this demo again:")
-    print("  python demo_auto_detection.py")
+    print("  python usb_speed_test_launcher.py")
     print("\nFor detailed documentation:")
     print("  Read AUTO_DETECTION_GUIDE.md")
     print("=" * 70 + "\n")
