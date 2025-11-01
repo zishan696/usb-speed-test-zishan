@@ -477,16 +477,13 @@ Files smaller than 1MB can be entirely cached in RAM, giving misleading "infinit
 
 ---
 
-## 🚀 Future Enhancements
+## ❓What can be Future Enhancements
 
-- [ ] Read speed testing
-- [ ] USB-C / Thunderbolt detection
-- [ ] Benchmark database (SQLite)
-- [ ] HTML report generation
-- [ ] CI/CD integration examples
-- [ ] Docker containerization
-- [ ] GUI version (tkinter/PyQt/Electron)
-- [ ] Multiple simultaneous USB tests
+- [ ] Include Read speed testing (Having both can be helpful)
+- [ ] HTML report generation (Can have easy web view, share and analyze report later)
+- [ ] PyInstaller Executable (Create standalone .exe, no Python installation needed)
+- [ ] GUI version (Interactive Execuatble version that require no installation)
+- [ ] Multiple sequential USB tests (Check many USB one after the other)
 
 ---
 
